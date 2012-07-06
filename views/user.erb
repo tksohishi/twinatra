@@ -1,0 +1,6 @@
+<h3><%= @user %>'s timeline</h3>
+<table border="1">
+  <% @tweets.each { |tweet| %>
+    <tr><td><%= tweet["text"] %></td></tr>
+  <% } %>	
+</table>
